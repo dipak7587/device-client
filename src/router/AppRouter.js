@@ -15,7 +15,7 @@ const AppRouter = () => {
   const [devices, setDevices] = useState([]);
 
   useEffect(() => {
-    addUserInstance()
+    // addUserInstance()
     deviceList().then(({results})=>{
         setDevices(results);
     })

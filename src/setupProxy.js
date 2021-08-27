@@ -6,12 +6,6 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'http://localhost:3001',
       changeOrigin: true,
-    });
-    app.use(
-        '/devices',
-        createProxyMiddleware({
-          target: 'http://localhost:3001',
-          changeOrigin: true,
-        })
+    })
   );
 };
